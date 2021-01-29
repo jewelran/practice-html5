@@ -1,109 +1,113 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
-main{
-    width:90%;
+
+main {
+    width: 1075px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-.section-title{
+
+body {
+    background-color: blue;
+}
+
+.section-title {
     margin: 2rem;
     margin-left: 0px;
+    color: rgb(255, 0, 242);
 }
-.top-player,.blogs,.courses{
+
+.top-player, .blogs, .courses {
     display: grid;
-    grid-gap:30px;
-    margin-top:20px;
-    background-color:aliceblue;
-    padding: 2rem;
+    grid-gap: 30px;
+    margin-top: 20px;
+    padding: 1rem;
     border-radius: 8px;
 }
-.top-player,.courses{
-    grid-template-columns:repeat(3,1fr);
 
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
 }
-.blogs{
-    grid-template-columns:repeat(2,1fr);
 
+.top-player, .courses {
+    grid-template-columns: repeat(3, 1fr);
 }
-.player>img{
+
+.blogs {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.player>img {
     width: 50px;
     margin-right: 20px;
     margin-left: 20px;
 }
-.player,.blog,.course-info{
+
+.player, .blog, .course-info {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
-.thumbline img{
+
+.thumbline img {
     width: 250px;
     margin-right: 2rem;
 }
-.filled{
-    color:gold;
+
+.filled {
+    color: gold;
     font-size: 0.7em;
 }
-.rating-point{
+
+.rating-point {
     border-radius: 5px;
     background-color: #FFE4E8;
     padding: 5px 26px;
     margin-left: 6rem;
 }
-.clock{
+
+.clock {
     color: red;
 }
-.coouse img{
+
+.course img {
     width: 300px;
     height: 200px;
 }
-.course-container{
-    box-shadow: 5px 0px 30px black;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem;
-}
-/* mediaQuary ...................... */
-@media(max-width:992px){
-    .top-player{
-        grid-template-columns:repeat(2,1fr);
-     
-    }
-    .blogs{
-        grid-template-columns:repeat(1,1fr);
-    }
-  .thumbline{
-      margin: 1rem;
-  }
-  .courses{
-      display: block;
-      grid-template-columns:repeat(3,1fr);
 
-  }
- 
+.course {
+    box-shadow: 5px 3px 30px rgb(83, 82, 82);
+    border-radius: 10px;
 }
-@media(max-width:668px){
-    .top-player{
-        grid-template-columns:repeat(1,1fr);
+
+/* mediaQuary ...................... */
+
+@media(max-width:992px) {
+    .top-player, .courses, .thumbline {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .blogs{
-        grid-template-columns:repeat(1,1fr);
+    .thumbline {
+        margin: 1rem;
     }
-    .blog{
+}
+
+@media(max-width:668px) {
+    .top-player, .blogs, .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
         display: block;
         margin: 0.5rem;
     }
-    .thumbline{
+    .thumbline {
         margin: 1rem;
     }
-    .courses{
-        display: block;
-        grid-template-columns:repeat(1,1fr);
-
-    }
-
 }
