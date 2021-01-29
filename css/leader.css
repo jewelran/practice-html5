@@ -59,6 +59,7 @@ main{
 }
 .coouse img{
     width: 300px;
+    height: 200px;
 }
 .course-container{
     box-shadow: 5px 0px 30px black;
